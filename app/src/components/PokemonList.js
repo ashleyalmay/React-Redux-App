@@ -15,7 +15,7 @@ const PokemonList = props => {
                 <h4 key={pokemon.url}>{pokemon.name}</h4>
             ))}
         </div>
-            {props.error && <p className="error">{props.error}</p>}
+            {props.error && <p className='error'>{props.error}</p>}
             <button onClick={fetchPokemon}>Get Pokemon</button>
             </>
     );
