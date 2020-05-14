@@ -9,10 +9,11 @@ const PokemonList = props => {
     };
     return(
         <>
-        <h1> PokeDex</h1>
-        <div>
+        <h1>PokeDex</h1>
+        <div class='pokemondiv'>
             {props.pokemon.map(pokemon =>(
-                <h4 key={pokemon.url}>{pokemon.name}</h4>
+                <h4 key={pokemon.url}>{pokemon.id}: {pokemon.name}<img src={pokemon.sprites.front_default}></img></h4>
+                //  <img src={pokemon.sprites.back_default}></img>
             ))}
         </div>
             {props.error && <p className='error'>{props.error}</p>}
